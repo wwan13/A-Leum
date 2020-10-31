@@ -37,6 +37,7 @@ import requests
 
 @csrf_exempt
 def home(request):
+    lists = callmodels.call.objects.all()
     if 'data' in request.POST:
         is_private = request.POST['data']
         print(is_private)
@@ -47,4 +48,4 @@ def home(request):
         new_call.save()
     else:
         is_private = False
-    return render(request, "main.html", {'is_private':is_private})
+    return render(request, "main.html", {'is_private':is_private,'lists':lists})
