@@ -18,5 +18,6 @@ from . import views
 
 urlpatterns = [
     path('create_detail/<int:disabled_id>',views.create_detail, name='create_detail'),
-    path('conconnect_detail_disable/<int:disabled_id>/<int:detail_id>',views.connect_detail_disable,name='connect_detail_disable')
+    path('conconnect_detail_disable/<int:disabled_id>/<int:detail_id>',views.connect_detail_disable,name='connect_detail_disable'),
+    path('create_disabled',views.create_disabled, name='create_disabled'),
 ]

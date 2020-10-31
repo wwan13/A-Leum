@@ -125,7 +125,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_DIRS =[
+    os.path.join(BASE_DIR, 'main', 'static') #static 파일들이 들어있는 경로
+]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static') # 개발자 관리 파일들을 static에 저장.
+STATICFILES_DIRS =  (os.path.join(BASE_DIR, 'pathtohomejsdirectory/'),)
 # media 파일 url 설정
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

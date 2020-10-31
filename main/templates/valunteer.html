@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{%load static%}
+{% block title %}봉사자 등록{% endblock %}
+
+{% block link %}
+{%'css/valunteer.css' %}
+{% endblock  %}
+
+{% block content %}
+    <div class="valunteer_main">
+        <div class="valunteer_title_div">
+            <h1 class="valunteer_title">봉사자 등록</h1> 
+        </div>
+
+        <div class="valuteer_info">
+            <div class="valuteer_info_margin">
+                <span class="input_name">아이디</span>
+                <input class="input_group" type="text" placeholder="아이디를 입력해주세요."><br>
+            </div>
+            <div class="valuteer_info_margin">
+                <span class="input_name">비밀번호</span>
+                <input class="input_group" type="password" placeholder="비밀번호를 입력해주세요."><br>
+            </div>
+
+            <div class="valuteer_info_margin">
+                <span class="input_name">비밀번호 확인</span>
+                <input class="input_group" type="password" placeholder="비밀번호를 입력해주세요."><br>
+            </div>
+
+            <div class="valuteer_info_margin">
+                <span class="input_name">이름</span>
+                <input class="input_group" type="text" placeholder="이름을 입력해주세요."><br>
+            </div>
+            
+                <span class="input_name">여성</span>
+                <input class="input_group" type="checkbox" placeholder="여성">
+
+                <span class="input_name">남성</span>
+                <input class="input_group" type="checkbox" placeholder="여성"><br>
+
+            <div class="valuteer_info_margin age_margin">
+                <span class="input_name">나이</span>
+                <input class="input_group" type="number"><br>
+            </div>
+
+            <div class="valuteer_info_margin">
+                <span class="input_name">전화번호</span>
+                <input class="input_group" type="text" placeholder="전화번호를 입력해주세요.">  
+            </div>
+            
+        </div>
+        <div>
+            <button class="login-button">확인</button>
+        </div>
+    </div>
+    {% endblock %}

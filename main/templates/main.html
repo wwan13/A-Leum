@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{%load static%}
+{% block title %}main{% endblock %}
+
+{% block link %}
+{% static 'css/main.css' %}
+{% endblock  %}
+
+{% block content %}
+    <!--장애인 도움 리스트-->
+    <div class="infolist">
+        <div class="infocard test_class">
+            <div class="info">
+                <img src="#" width="35" height="35" alt="user.png">
+                <br>
+                <span class="name">이름</span><br>
+                <span class="ellipsis">주소</span><br>
+                <button><a class="link" href="#">자세히 알아보기</a></button>
+            </div>
+        </div>
+        <div class="infocard test_class">
+            <div class="info">
+                <img src="#" width="35" height="35" alt="user.png">
+                <br>
+                <span class="name">name</span><br>
+                <span class="ellipsis">주소</span><br>
+                <button><a class="link" href="#">자세히 알아보기</a></button>
+            </div>
+        </div>
+    </div>
+{% endblock %}

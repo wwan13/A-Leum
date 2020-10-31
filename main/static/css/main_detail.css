@@ -1,0 +1,43 @@
+/* 글씨체 불러오기 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* 전체 글씨체 설정 */
+body{
+    font-family: 'Roboto', 'Noto Sans KR', '맑은고딕', Malgun Gothic, dotum, '돋음', arial, sans-serif;
+}
+
+
+.title_class{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-family: bold;
+}
+
+.card-list{
+    width: 800px;
+    height: 182px;
+    border:1px solid lightgray;
+    margin: 0 auto;
+}
+
+.itemssss{
+    float:left;
+    padding-right: 20px;
+}
+
+.text-group{
+    margin-top: 10px;
+}
+
+.main_detail_item{
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.name_bold{
+    font-weight: bold;
+}

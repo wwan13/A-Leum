@@ -1,0 +1,60 @@
+/* 글씨체 불러오기 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* 전체 글씨체 설정 */
+body{
+    font-family: 'Roboto', 'Noto Sans KR', '맑은고딕', Malgun Gothic, dotum, '돋음', arial, sans-serif;
+}
+
+/* 처음 타이틀 글씨  */
+.detail_title_div {
+    text-align: center;
+}
+
+.detail_title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* 메인 div */
+.detail_main{
+    /*정가운데로 띄우기 */
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    
+    overflow: hidden;
+}
+
+/* 봉사자 내용 div */
+.detail_info { 
+    margin-top: 20px;
+    width: 700px;
+    height:200px;
+    border:1px solid lightgray;
+    border-radius: 3px;
+}
+
+.detail_input {
+    height: 200px;
+    width: 700px;
+    border: none;
+}
+
+/* 버튼 설정 */
+.detail-button{
+    height: 30px;
+    margin-top: 10px;
+    width: 700px;
+    background-color: rgb(33, 160, 132);
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+
+.detail-button:hover{
+    cursor: pointer;
+}

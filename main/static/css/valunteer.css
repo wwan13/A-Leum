@@ -1,0 +1,74 @@
+/* 글씨체 불러오기 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* 전체 글씨체 설정 */
+body{
+    font-family: 'Roboto', 'Noto Sans KR', '맑은고딕', Malgun Gothic, dotum, '돋음', arial, sans-serif;
+}
+
+/* 처음 타이틀 글씨  */
+.valunteer_title_div {
+    text-align: center;
+}
+
+.valunteer_title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* 메인 div */
+.valunteer_main{
+    /*정가운데로 띄우기 */
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    /* margin-left:-150px;
+    margin-top:-150px; */
+    /* text-align: center;
+    float: left; */
+}
+
+/* 봉사자 내용 div */
+.valuteer_info { 
+    /* overflow:hidden; */
+    margin-top: 20px;
+    padding: 30px;
+    width: 300px;
+    height:auto;
+    border:1px solid lightgray;
+    border-radius: 3px;
+}
+
+.valuteer_info_margin{
+    margin-bottom: 3px;
+}
+
+.age_margin{
+    margin-top: 3px;
+}
+/* input 관련 */
+.input_group{
+   border: none;
+}
+
+.input_name{
+    font-size: 15px;
+}
+
+/* 버튼 설정 */
+.login-button{
+    height: 30px;
+    margin-top: 5px;
+    width: 362px;
+    background-color: rgb(33, 160, 132);
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+
+.login-button:hover{
+    cursor: pointer;
+}

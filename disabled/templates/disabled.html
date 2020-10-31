@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{%load static%}
+{% block title %}장애인 정보 등록{% endblock %}
+
+{% block link %}
+{% 'css/disabled.css' %}
+{% endblock  %}
+
+{% block content %}
+    <div class="disabled_main">
+        <div class="disabled_title_div">
+            <h1 class="disabled_title">장애인 정보 등록</h1>
+        </div>
+        <form action="#" method="POST">
+            <div class="disabled_info">
+
+                <div class="img_div_class">
+                    <span>
+                        <img alt="img" name="image" src="img/example.jpg" width="220px" height="220px"> <br>
+                    </span>
+                </div>
+
+                <div class="info_margin_class">
+                    <span class="input_name">이름</span>
+                    <input class="input_group" type="text" name="name" placeholder="이름을 입력해주세요."><br>
+                </div>
+
+                <span class="input_name">여성</span>
+                <input class="input_group" name="girl" type="checkbox">
+
+
+                <span class="input_name">남성</span>
+                <input class="input_group" name="man" type="checkbox">
+
+                <div class="info_margin_class num_margin_class">
+                    <span class="input_name">전화번호</span>
+                    <input class="input_group" type="text" name="number" placeholder="전화번호를 입력해주세요."><br>
+                </div>
+
+                <div class="info_margin_class">
+                    <span class="input_name">장애의 종류</span>
+                    <input class="input_group" type="text" name="type" placeholder="장애의 종류를 입력해주세요."><br>
+                </div>
+
+                <div>
+                    <!-- 상세정보 넘어가기 -->
+                    <a href="#">
+                        <button class="detail-button" name="detail">상세정보 입력</button>
+                    </a>
+                </div>
+
+            </div>
+            <div>
+                <a href="#">
+                    <button type="submit" class="login-button">확인</button>
+                </a>
+            </div>
+        </form>
+    </div>
+{% endblock %}
