@@ -32,9 +32,9 @@ def create_detail(request,disabled_id):
             disabled = my_disabled,
         )
         new_detail.save()
-        return redirect('')
+        return redirect('home')
     else:
-        return render(request,'create_detail.html',{'disabled':my_disabled})
+        return render(request,'disabled_detail.html',{'disabled':my_disabled})
     # pass
 
     
@@ -50,11 +50,5 @@ def create_disabled(request):
         new_disabled.save()
         return render(request, '#')
     else:
-        return render(request, '#')
+        return render(request, 'disabled.html')
 
-
-
-def connect_detail_disable(request, disabled_id, detail_id):
-    disabled = get_object_or_404(Disabled,pk = disabled_id)
-    disabled.details.add(Detail,pk=detail_id)
-    return redirect('create_detail')

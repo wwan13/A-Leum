@@ -32,4 +32,4 @@ def signup(request):
                 phone=request.POST['phone'])
             auth.login(request, user)
             return redirect('login')
-    return render(request, '#.html')
+    return render(request, 'valunteer.html')
