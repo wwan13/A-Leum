@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* 전체 글씨체 설정 */
-body{
+body {
     font-family: 'Roboto', 'Noto Sans KR', '맑은고딕', Malgun Gothic, dotum, '돋음', arial, sans-serif;
 }
 
@@ -19,22 +19,30 @@ body{
 }
 
 /* 메인 div */
-.detail_main{
+.detail_main {
     /*정가운데로 띄우기 */
-    position:absolute;
-    left:50%;
-    top:50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
-    
+
     overflow: hidden;
 }
 
 /* 봉사자 내용 div */
-.detail_info { 
+.detail_info {
     margin-top: 20px;
     width: 700px;
-    height:200px;
-    border:1px solid lightgray;
+    height: 200px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.detail_info_ {
+    margin-top: 20px;
+    width: 700px;
+    height: 70px;
+    border: 1px solid lightgray;
     border-radius: 3px;
 }
 
@@ -45,7 +53,7 @@ body{
 }
 
 /* 버튼 설정 */
-.detail-button{
+.detail-button {
     height: 30px;
     margin-top: 10px;
     width: 700px;
@@ -55,6 +63,6 @@ body{
     border-radius: 3px;
 }
 
-.detail-button:hover{
+.detail-button:hover {
     cursor: pointer;
 }

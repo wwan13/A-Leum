@@ -18,10 +18,10 @@
                     <!-- <a href="#">
                         <img alt="logo" src="img/logo.jpg" width="100px" height="100px">
                     </a> -->
-                    <li class="menulink" ><a href="#">홈</a></li>
-                    <li class="menulink" ><a href="#">로그인</a></li>
-                    <li class="menulink" ><a href="#">로그아웃</a></li>
-                    <li class="menulink" ><a  href="#">회원가입</a></li>
+                    <li class="menulink"><a href="{% url '' %}">홈</a></li>
+                    <li class="menulink"><a href="{% url 'login' %}">로그인</a></li>
+                    <li class="menulink"><a href="#">로그아웃</a></li>
+                    <li class="menulink"><a href="{% url 'signup' %}">회원가입</a></li>
                 </ul>
             </nav>
         </div>

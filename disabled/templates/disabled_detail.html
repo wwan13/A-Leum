@@ -2,23 +2,30 @@
 {%load static%}
 {% block title %}디테일{% endblock %}
 
-{% block link %}
-{% 'css/disabled_detail.css' %}
+{% block static %}
+{% static 'css/disabled_detail.css' %}
 {% endblock  %}
 
 {% block content %}
-    <div class="detail_main">
+<div class="detail_main">
+    <form action="{% url 'create_detail' disabled.id %}" method="POST">
+        {% csrf_token %}
         <div class="detail_title_div">
-            <h1 class="detail_title">상세정보 입력</h1> 
+            <h1 class="detail_title">상세정보 입력</h1>
         </div>
 
         <div class="detail_info">
-            <input class="detail_input" type="text" placeholder="상세정보를 입력해주세요."><br>
+            <input class="detail_input" name="volunteer_name" type="text" placeholder="자원봉사자님의 이름을 입력해주세요."><br>
+        </div>
+
+        <div class="detail_info">
+            <input class="detail_input" name="about" type="text" placeholder="상세정보를 입력해주세요."><br>
         </div>
         <div class="detail_button_div">
             <a>
                 <button class="detail-button">확인</button>
             </a>
         </div>
-    </div>
-    {% endblock %}
+    </form>
+</div>
+{% endblock %}

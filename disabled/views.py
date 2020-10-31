@@ -32,7 +32,7 @@ def create_detail(request,disabled_id):
             disabled = my_disabled,
         )
         new_detail.save()
-        return redirect('home')
+        return redirect('')
     else:
         return render(request,'disabled_detail.html',{'disabled':my_disabled})
     # pass

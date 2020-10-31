@@ -31,5 +31,5 @@ def signup(request):
                 age=request.POST['age'],
                 phone=request.POST['phone'])
             auth.login(request, user)
-            return redirect('login')
+            return redirect('')
     return render(request, 'valunteer.html')
