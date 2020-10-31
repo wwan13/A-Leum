@@ -7,16 +7,34 @@
 {% endblock  %}
 
 {% block content %}
-<!--장애인 도움 리스트-->
-<div class="infolist">
-    <div class="infocard test_class">
-        <div class="info">
-            <img src="#" width="35" height="35" alt="user.png">
-            <br>
-            <span class="name">이름</span><br>
-            <span class="ellipsis">주소</span><br>
-            <button><a class="link" href="#">자세히 알아보기</a></button>
-        </div>
+
+<div class="container">
+    <div class="image_box">
+        <img class="image" src="{% static 'image/main.jpg' %}" alt="main.jpg">
+        <div class="text mg-t-">아름 : 두 팔을 벌려 껴안은 둘레</div>
+        <div class="text mg-t">#자원봉사 #봉사 #장애인 #마음</div>
     </div>
+
+    <div class="btn_box">
+        <a class="link_btn" href="{% url 'signup' %}">
+            <div>아름과 함꼐하기</div>
+        </a>
+    </div>
+
+    <div class="need_help">
+
+        <div class="nh_title">오늘의 아름</div>
+        {% for list in lists %}
+        <div class="help_info">
+            <div class="help_num">{{list.id}}</div>
+            <div class="help_address">주소</div>
+            <a class="help_state" href="#">{{list.state}}</a>
+        </div>
+        {% endfor %}
+    </div>
+
 </div>
+
+
+
 {% endblock %}
