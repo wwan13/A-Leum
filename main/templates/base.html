@@ -11,13 +11,11 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <div class="wrapper">
             <nav>
                 <ul class="menu">
-                    <!-- <a href="#">
-                        <img alt="logo" src="img/logo.jpg" width="100px" height="100px">
-                    </a> -->
+                    
                     <li class="menulink"><a href="{% url '' %}">홈</a></li>
                     <li class="menulink"><a href="{% url 'login' %}">로그인</a></li>
                     <li class="menulink"><a href="#">로그아웃</a></li>
@@ -25,7 +23,24 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> -->
+    <div class="header">
+        <a class="logo" href="{% url '' %}">
+            <img class="logo__image" src="{% static 'image/logo.png' %}" alt="logo.png">
+        </a>
+
+        <div class="header__right">
+            {% if user.is_authenticated %}
+            <div class="user_text">{{user}} 봉사자님</div>
+            <a href="{% url 'logout' %}" class="user_text">로그아웃</a>
+            {% else %}
+            <a href="{% url 'login' %}" class="user_text">로그인</a>
+            <a href="{% url 'signup' %}" class="user_text">회원가입</a>
+            {% endif %}
+        </div>
+
+
+    </div>
     {% block content %}
 
     {% endblock %}

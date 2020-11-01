@@ -17,7 +17,7 @@
 
     <div class="btn_box">
         <a class="link_btn" href="{% url 'signup' %}">
-            <div>아름과 함꼐하기</div>
+            <div>아름과 함께하기</div>
         </a>
     </div>
 
@@ -27,8 +27,8 @@
         {% for list in lists %}
         <div class="help_info">
             <div class="help_num">{{list.id}}</div>
-            <div class="help_address">주소</div>
-            <a class="help_state" href="#">{{list.state}}</a>
+            <div class="help_address">{{list.address}}</div>
+            <a class="help_state" href="{% url 'get_connect' list.id %}">{{list.state}}</a>
         </div>
         {% endfor %}
     </div>

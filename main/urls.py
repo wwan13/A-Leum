@@ -19,4 +19,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('',views.home,name=''),
+    path('get_connect/<int:call_id>',views.get_connect,name='get_connect')
 ]

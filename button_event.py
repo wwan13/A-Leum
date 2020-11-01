@@ -3,7 +3,7 @@ import requests, serial
 URL = 'http://127.0.0.1:8000/' 
 
 
-ser = serial.Serial("/dev/cu.usbmodem141201", 9600)
+ser = serial.Serial("/dev/cu.usbmodem141301", 9600)
 
 print('아두이노 연결 성공')
 
