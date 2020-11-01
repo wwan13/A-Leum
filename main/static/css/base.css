@@ -41,8 +41,9 @@ a {
     background-color: rgb(221, 221, 221);
     width: 100%;
     height: 180px;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    left: 0%;
+    bottom: 0%;
 }
 
 .company {
@@ -80,4 +81,29 @@ a {
 
 .git_name {
     color: rgb(85, 85, 85);
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+
+
+.logo__image {
+    width: 100px;
+    height: 70px;
+}
+
+.header__right {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+.user_text {
+    padding: 8px;
 }
